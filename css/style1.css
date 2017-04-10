@@ -1,0 +1,664 @@
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+/*REM是相对的单位:当前元素相对于页面的根元素"HTML元素的fontSize设定的值"*/
+html {
+    font-size: 100px; /*->让 1REM = 100PX */
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+body, html {
+    font-size: .16rem;
+    font-family: "Helvetica 微软雅黑";
+    color: #333;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.navbar {
+    /*position: relative;*/
+    /*min-height: 50px;*/
+    margin-bottom: 0;
+    border: none;
+}
+
+/*小于768px下的css*/
+@media (max-width: 768px) {
+    .my-language {
+        display: none;
+    }
+
+    .header .header-nav {
+        margin-top: .5rem;
+        background: #ddd;
+    }
+}
+
+/*大于768px下的css*/
+@media (min-width: 768px) {
+    .header .header-nav ul li.app {
+        width: 1.11rem;
+    }
+
+    .header .header-nav ul li.app a {
+        padding: 0;
+    }
+
+    .header .header-nav ul li a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 .2rem;
+        line-height: .47rem;
+        color: #666;
+        font-size: .18rem;
+    }
+
+    .header .header-nav {
+        float: right
+    }
+}
+
+.header {
+    padding: .5rem 0;
+}
+
+.header .logo {
+    float: left;
+    cursor: pointer;
+}
+
+/*.header .header-nav {*/
+/*float: right*/
+/*}*/
+
+.header .header-nav ul li {
+    text-align: center;
+    border-bottom: .03rem solid transparent;
+    margin-right: .1rem;
+}
+
+.header .header-nav ul li:hover {
+    border-bottom: .03rem solid #333;
+    font-weight: bold;
+    color: #333;
+}
+
+.header .header-nav ul li.show {
+    border-bottom: .03rem solid #333;
+    font-weight: bold;
+    color: #333;
+}
+
+.header .my-language {
+    float: right;
+    margin: .12rem 0 .1rem .2rem;
+}
+
+.header .my-language select {
+    border: .01rem solid #e0e0e0;
+    color: #e0e0e0;
+    height: .22rem;
+    width: .62rem;
+    font-size: .14rem;
+    outline: none;
+}
+
+.index-banner {
+    width: 100%;
+    position: relative;
+}
+
+.index-banner-img {
+    width: 100%;
+}
+
+.index-banner-img img {
+    width: 100%;
+}
+
+.index-banner-txt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.index-banner h1 {
+    padding-top: 100px;
+    font-size: .72rem;
+    color: #fff;
+    animation: fadeInDown 1s ease 0s 1 both;
+}
+
+.index-banner h3 {
+    padding-top: .34rem;
+    padding-bottom: .4rem;
+    font-size: .48rem;
+    color: #fff;
+    animation: fadeInDown 2s ease 0s 1 both;
+}
+
+.index-banner p {
+    font-size: .18rem;
+    color: #0e778e;
+    line-height: .25rem;
+    font-weight: bold;
+    animation: fadeInDown 3s ease 0s 1 both;
+}
+
+.index-banner .app-down {
+    width: 5.5rem;
+    margin: 0 auto;
+    padding: .6rem 0 1rem;
+}
+
+.index-banner .app-down div {
+    color: #fff;
+    text-align: center;
+    border-radius: .28rem;
+    cursor: pointer;
+}
+
+.index-banner .app-down div a {
+    width: 2.3rem;
+    height: .56rem;
+    line-height: .56rem;
+    border-radius: .29rem;
+    display: inline-block;
+    color: #fff;
+    font-size: .2rem;
+}
+
+.index-banner .app-down .ios {
+    background: #00b9b2;
+    float: left;
+    animation: fadeInRight 2s ease 1s 1 both;
+}
+
+.index-banner .app-down .android {
+    background: #fabe00;
+    float: right;
+    animation: fadeInLeft 2s ease 1s 1 both;
+}
+
+.index-banner .app-down .ios:hover,.index-banner .app-down .android:hover {
+    background: #fff;
+}
+
+.index-banner .app-down .ios:hover a {
+    color: #00b9b2;
+}
+
+.index-banner .app-down .android:hover a {
+    color: #fabe00;
+}
+
+.main {
+    padding-bottom: .45rem;
+}
+
+.main .main-item {
+    padding: .45rem 0;
+}
+
+.main .main-item .main-item-txt {
+    float: left;
+    /*font-family: "微软雅黑";*/
+    /*animation: fadeInLeft 2s ease 1s 1 both;*/
+}
+
+.main .main-item .main-item-txt h2 {
+    font-size: .34rem;
+    color: #fabe00;
+    border-bottom: .03rem solid #fabe00;
+    display: inline-block;
+}
+
+.main .main-item .main-item-txt span {
+    font-size: .62rem;
+    color: #fabe00;
+    font-weight: bold;
+    padding-left: .05rem;
+}
+
+.main .main-item .main-item-txt h3 {
+    font-size: .38rem;
+    font-weight: bold;
+    padding-top: .7rem;
+    /*color: #333;*/
+}
+
+.main .main-item .main-item-txt h4 {
+    font-size: .26rem;
+    padding-top: .3rem;
+    padding-bottom: .28rem;
+    /*color: #333;*/
+}
+
+.main .main-item .main-item-txt p {
+    font-size: .16rem;
+    line-height: .28rem;
+    color: #3f3f3f;
+}
+
+.main .main-item .main-item-img img {
+    width: 100%;
+}
+
+.footer p {
+    line-height: .5rem;
+    text-align: center;
+    background: #f8f8f8;
+    color: #666;
+}
+
+/*about-us*/
+.about-us-banner {
+    position: relative;
+}
+
+.about-us-banner img {
+    width: 100%;
+}
+
+.about-us-banner div {
+    width: 774px;
+    height: 211px;
+    position: relative;
+}
+
+.about-us-banner img:nth-child(2) {
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -387px;
+}
+
+.about-us-main {
+    padding: 0 45px;
+}
+
+.about-us-main h2 {
+    width: 506px;
+    height: 101px;
+    background: url("../images/Enjoy.png") no-repeat left top;
+    margin: 60px 0 30px 0;
+}
+
+/*.about-us-main h3 {*/
+/*font-size: 20px;*/
+/*color: #00b9b2;*/
+/*padding-top: 5px;*/
+/*padding-bottom: 30px;*/
+/*}*/
+
+.about-us-main p {
+    font-size: 16px;
+    /*color: #0f2829;*/
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.about-us-main .about-us-main-img {
+    padding-bottom: 50px;
+}
+
+.about-us-main .about-us-main-img img {
+    width: 100%;
+}
+
+/*app*/
+.app-banner {
+    background: url("../images/app-banner.jpg") no-repeat top center;
+    width: 100%;
+    height: 818px;
+    /*background-size: cover;*/
+    text-align: center;
+    /*position: relative;*/
+}
+
+/*.app-banner .app{*/
+/*width: 300px;*/
+/*height: 300px;*/
+/*padding: 30% 0 0 15%;*/
+/*}*/
+/*.app-banner .app p{*/
+/*width: 220px;*/
+/*font-size: 20px;*/
+/*margin-bottom: 30px;*/
+/*}*/
+
+.app-main {
+    padding-bottom: 60px;
+}
+
+.app-main h3 {
+    /*color: #333;*/
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+.app-main h5 {
+    /*color: #333;*/
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 45px;
+}
+
+.app-main p {
+    color: #666;
+    font-size: 14px;
+    line-height: 25px;
+    padding-top: 20px;
+}
+
+/*join-us*/
+.join-us-banner img {
+    width: 100%;
+}
+
+.join-us-main h1 {
+    font-size: 36px;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    color: #0f2829;
+    /*font-family: "宋体";*/
+    font-weight: 900;
+}
+
+.join-us-main p {
+    line-height: 40px;
+    padding-bottom: 140px;
+    font-size: 16px;
+    color: #0f2829;
+}
+
+.join-us-main ul li:first-child {
+    margin-top: 0;
+}
+
+.join-us-main ul li {
+    margin-top: 35px;
+}
+
+.join-us-main ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.join-us-main ul li:first-child a {
+    color: #1e323f;
+    font-size: 18px;
+    font-weight: bold;
+    /*font-family: "宋体";*/
+}
+
+.join-us-main .join-us-main-btn {
+    font-size: 18px;
+    line-height: 38px;
+    width: 180px;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+    border-radius: 20px;
+    margin: 88px auto 100px;
+    color: #666;
+    cursor: pointer;
+}
+
+.join-us-main .join-us-main-share {
+    width: 180px;
+    margin: 0 auto;
+    padding-bottom: 95px;
+}
+
+/*.music.move {*/
+/*-webkit-animation: musicMove 1s linear 1s infinite both;*/
+/*animation: musicMove 1s linear 1s infinite both;*/
+/*}*/
+{
+    animation: fadeInRight 2s ease 1s 1 both
+;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        -ms-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@-webkit-keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1
+    }
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg)
+    }
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+        opacity: 1;
+    }
+}
+
+
+/*@media (max-width: 1366px) {*/
+    /*.index-banner h1 {*/
+        /*padding-top: 50px;*/
+        /*font-size: 50px;*/
+    /*}*/
+
+    /*.index-banner h3 {*/
+        /*padding-top: 15px;*/
+        /*padding-bottom: 15px;*/
+        /*font-size: 20px;*/
+    /*}*/
+
+    /*.index-banner p {*/
+        /*font-size: 14px;*/
+        /*font-weight: bold;*/
+    /*}*/
+
+    /*.index-banner .app-down {*/
+        /*padding-top: 40px;*/
+    /*}*/
+
+/*}*/
+
+/*@media (max-width: 1088px) {*/
+/*.index-banner h1 {*/
+/*padding-top: 40px;*/
+/*font-size: 30px;*/
+/*}*/
+
+/*.index-banner h3 {*/
+/*font-size: 15px;*/
+/*}*/
+
+/*.index-banner p {*/
+/*font-size: 12px;*/
+/*font-weight: bold;*/
+/*}*/
+
+/*.index-banner .app-down {*/
+/*padding-top:30px;*/
+/*}*/
+
+/*}*/
+/*@media (max-width: 992px) {*/
+/*.index-banner h1 {*/
+/*padding-top: 30px;*/
+/*font-size: 20px;*/
+/*}*/
+/*.index-banner .app-down {*/
+/*padding-top:20px;*/
+/*}*/
+/*.index-banner .app-down div a{*/
+/*width: 180px;*/
+/*line-height: 40px;*/
+/*height: 40px;*/
+/*border-radius: 20px;*/
+/*font-size: 16px;*/
+/*}*/
+
+/*}*/
+@media (max-width: 768px) {
+    .index-banner-txt{
+        margin-top: 50px;
+    }
+    .index-banner h1 {
+        padding-top: 20px;
+        font-size: 18px;
+    }
+
+    .index-banner h3 {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .index-banner p {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .index-banner .app-down {
+        width: 400px;
+        padding-bottom: 0;
+    }
+
+    .index-banner .app-down div a {
+        width: 140px;
+        line-height: 30px;
+        height: 30px;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+
+}
+
+/*@media (max-width: 600px) {*/
+/*.index-banner h1 {*/
+/*padding-top: 5px;*/
+/*font-size: 16px;*/
+/*}*/
+/*.index-banner h3 {*/
+/*padding-top: 5px;*/
+/*padding-bottom: 5px;*/
+/*font-size: 14px;*/
+/*}*/
+/*.index-banner p {*/
+/*font-size: 12px;*/
+/*font-weight: bold;*/
+/*}*/
+/*.index-banner .app-down {*/
+/*width: 300px;*/
+/*padding-top:5px;*/
+/*}*/
+/*.index-banner .app-down div a{*/
+/*width: 140px;*/
+/*line-height: 20px;*/
+/*height: 20px;*/
+/*border-radius: 10px;*/
+/*font-size: 10px;*/
+/*}*/
+/*}*/
+
+
+
+
+
+
