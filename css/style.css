@@ -243,7 +243,7 @@ a:active {
 .about-us-main h2 {
     width: 506px;
     height: 101px;
-    background: url("../images/Enjoy.png") no-repeat left top;
+    background: url("../images/Enjoy-lg.png") no-repeat left top;
     margin: 60px 0 30px 0;
 }
 
@@ -264,32 +264,45 @@ a:active {
 
 /*app*/
 .app-banner {
-    /*background: url("../images/app-banner.jpg") no-repeat top center;*/
+    /*background: url("../images/app-index-banner19.jpg") no-repeat top center;*/
     width: 100%;
     /*height: 818px;*/
     /*background-size: cover;*/
     /*text-align: center;*/
-    /*position: relative;*/
+    position: relative;
+}
+.app-banner .app{
+    position: absolute;
+    left: 13%;
+    top: 40%;
+    /*font-size: 100px;*/
+}
+
+.app-banner .app p{
+    font-size: 22px;
+    /*font-weight: bold;*/
+}
+.app-banner .app img{
+    width: 80%;
+    animation: fadeInDown 2s ease 0s 1 both;
+}
+.app-banner img {
+    width: 100%;
 }
 
 .app-main {
     padding-bottom: 60px;
 }
 
-
-.app-banner img {
-    width: 100%;
-}
-
 .app-main h3 {
-    font-size: 18px;
+    /*font-size: 18px;*/
     font-weight: bold;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .app-main h5 {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     padding-top: 45px;
 }
 
@@ -344,6 +357,7 @@ a:active {
 .join-us-main .join-us-main-btn:hover {
     border: 1px solid #0D4C8A;
     color: #0D4C8A;
+    font-weight: bold;
     /*color: #ffffff;*/
 }
 
@@ -511,13 +525,14 @@ a:active {
     }
 
     .index-banner h1 {
-        padding-top: 30px;
-        font-size: 32px;
+        padding-top: 0;
+        font-size: 40px;
     }
 
     .index-banner h3 {
         padding-top: 15px;
-        font-size: 20px;
+        font-size: 26px;
+        padding-bottom: 30px;
     }
 
     .index-banner p {
@@ -536,7 +551,9 @@ a:active {
         border-radius: 20px;
         font-size: 16px;
     }
-
+    .main .main-item{
+        padding: 25px 0 0 0;
+    }
     .main .main-item .main-item-txt h2 {
         font-size: 26px;
     }
@@ -556,9 +573,27 @@ a:active {
     }
 
     .main .main-item .main-item-txt p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
+    .app-banner .app p{
+        font-size: 18px;
+
+        /*font-weight: bold;*/
+    }
+    .app-banner .app img{
+        width: 70%;
+    }
+
+    .about-us-main{
+        padding: 0;
+    }
+    .footer{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
     .footer p {
         font-size: 14px;
     }
@@ -575,11 +610,15 @@ a:active {
     .logo {
         width: 56px;
         height: 59px;
-        background: url("../images/logo-xs.png") no-repeat left center;
+        background: url("../images/logo.png") no-repeat left center;
+        background-size: 80%;
         margin: 2% 0 2% 5%;
     }
     .navbar-toggle {
-        margin: 5%;
+        margin: 6% 6% 0 0 ;
+    }
+    .navbar-toggle{
+        padding: 8px 8px;
     }
 
     .navbar-nav {
@@ -614,12 +653,14 @@ a:active {
         height: 32px;
         line-height: 30px;
         color: #666;
-        font-size: 14px;
-        border-bottom: 2px solid #333;
+        font-size: 12px;
+        border-bottom: 1px solid #666;
     }
-
-    .header .header-nav ul li.show {
+    .header .header-nav ul li.show{
         border: none;
+    }
+    .header .header-nav ul li.show a,.header .header-nav ul li:hover a{
+        border-bottom: 2px solid #333;
     }
 
     .header .header-nav ul li:hover {
@@ -634,22 +675,24 @@ a:active {
     .index-banner-img {
         width: 100%;
         /*height: 173px;*/
-        /*background: url("../images/banner-xs.jpg") no-repeat top center;*/
+        /*background: url("../images/index-banner-xs.jpg") no-repeat top center;*/
         /*background-size: 100%;*/
     }
 
     .index-banner-txt {
         margin-top: 0;
+        position: absolute;
+        top: 12%;
     }
 
     .index-banner h1 {
         padding-top: 0;
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .index-banner h3 {
         padding: 3% 0 0;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .index-banner p {
@@ -690,7 +733,7 @@ a:active {
     /*}*/
 
     .index-banner .app-down div a {
-        width: 135px;
+        width: 125px;
         line-height: 30px;
         height: 30px;
 
@@ -701,35 +744,44 @@ a:active {
     .main .main-item {
         padding: 0;
     }
+    .main .main-item:nth-child(1){
+        padding-top: 20px;
+    }
 
     .main .main-item .main-item-txt h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .main .main-item .main-item-txt span {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .main .main-item .main-item-txt h3 {
-        font-size: 24px;
+        font-size: 22px;
         padding-top: 15px;
     }
 
     .main .main-item .main-item-txt h4 {
-        font-size: 20px;
-        padding: 15px 0;
+        font-size: 18px;
+        padding: 10px 0;
     }
 
     .main .main-item .main-item-txt p {
-        font-size: 14px;
+        font-size: 12px;
+    }
+    .footer p{
+        font-size: 12px;
+    }
+    .about-us-main{
+        padding: 0 10px;
     }
     .about-us-main h2 {
-        width: 206px;
-        height: 41px;
-        background: url("../images/Enjoy-xs.png") no-repeat;
-        margin: 40px 0 10px 0;
+        width: 262px;
+        height: 52px;
+        background: url("../images/Enjoy-xs1.png") no-repeat;
+        background-size: 80%;
+        margin: 40px 0 0 0;
     }
-
     .about-us-main p {
         font-size: 14px;
     }
@@ -738,38 +790,71 @@ a:active {
         background: url("../images/app-banner-xs.jpg") no-repeat;
         /*height: 256px;*/
     }
+    .app-banner .app p{
+        margin-left: -35px;
+        -webkit-transform: scale(0.8);
+        font-size: 10px;
+        /*font-weight: bold;*/
+    }
+    .app-banner .app img{
+        width: 30%;
+    }
+
 
     .app-main h3 {
-        font-size: 16px;
-        padding-top: 60px;
+        font-size: 14px;
+        padding-top: 20px;
     }
 
     .app-main h5 {
-        padding-top: 30px;
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    .app-main p{
+        font-size: 12px;
+        padding-top: 15px;
     }
 
     .join-us-main h1 {
-        font-size: 26px;
-        padding: 50px 0 10px 0;
+        font-size: 20px;
+        padding: 30px 0 15px 0;
     }
 
     .join-us-main p {
         font-size: 14px;
         line-height: 30px;
-        padding-bottom: 40px;
+        padding-bottom: 25px;
     }
-
-    .join-us-main dd {
+    .join-us-main dl{
         font-size: 14px;
+    }
+    .join-us-main dd {
+        font-size: 12px;
     }
 
     .join-us-main .join-us-main-btn {
-        margin: 50px auto 50px;
-        font-size: 16px;
+        width: 150px;
+        margin: 15px auto 30px;
+        font-size: 14px;
+        line-height:36px;
     }
 
     .join-us-main .join-us-main-share {
-        padding-bottom: 50px;
+        width: 120px;
+        padding-bottom: 30px;
+    }
+    .join-us-main .join-us-main-share img{
+        display: none;
+    }
+    .join-us-main-share .wechat,.join-us-main-share .weibo{
+        width: 30px;
+        height: 25px;
+    }
+    .join-us-main-share .wechat{
+        background: url("../images/wx.png") no-repeat;
+    }
+    .join-us-main-share .weibo{
+        background: url("../images/wb.png") no-repeat;
     }
 }
 
