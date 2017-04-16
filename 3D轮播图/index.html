@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery-roundabout</title> 
+
+<style type="text/css"> 
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";background:#ddd;}
+/* roundabout */
+.roundabout-holder{width:850px;height:496px;margin:0 auto;}
+.roundabout-moveable-item{width:646px;height:416px;cursor:pointer;}
+/*border:3px solid #ccc;border:3px solid rgba(0, 0, 0, 0.08);border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;*/
+.roundabout-moveable-item img{width:100%;}
+/*.roundabout-in-focus{border:3px solid rgba(0, 0, 0, 0.2);}*/
+</style> 
+
+</head> 
+<body> 
+
+	<ul class="roundabout" id="myroundabout"> 
+		<li><img src="img/slide1.jpg"></li>
+		<li><img src="img/slide2.jpg"></li>
+		<li><img src="img/slide3.jpg"></li>
+		<li><img src="img/slide4.jpg"></li>
+		<li><img src="img/slide5.jpg"></li>
+	</ul>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script type="text/javascript" src="jquery.roundabout.js"></script> 
+<script type="text/javascript" src="jquery.roundabout-shapes.js"> </script>
+<script type="text/javascript"> 
+$(document).ready(function() {
+	$('#myroundabout').roundabout({
+//		autoplay: true,//自动播放
+//		autoplayDuration: 5000,//时间
+		autoplayPauseOnHover: true,//自动鼠标移上停滞
+		shape: 'figure8',  //支持属性theJuggler、figure8、waterWheel、square、conveyorBeltLeft、conveyorBeltRight、goodbyeCruelWorld、diagonalRingLeft、diagonalRingRight、rollerCoaster、tearDrop、tickingClock、flurry、nowSlide、risingEssence随便换
+		minOpacity: 1
+	});
+});
+</script>	
+	
+</body> 
+</html> 

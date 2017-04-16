@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+            text-align: center;
+            font-size: 100px;
+        }
+
+        .box {
+            width: 100%;
+            height: 800px;
+            background: red;
+            overflow: hidden;
+        }
+
+        .main {
+            width: 100%;
+            height: 300px;
+            background: pink;
+
+        }
+
+        .mainanimate {
+            animation: fadeInLeft 2s ease 1s 1 both;
+        }
+
+        .footer {
+            width: 100%;
+            height: 300px;
+            background: blueviolet;
+
+        }
+
+        .footeram {
+            animation: fadeInLeft 2s ease 1s 1 both;
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0)
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="box">
+        <img src="images/index-banner12.png" alt="" class="skew">
+        banner
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="main" id="main">中间部位</div>
+</div>
+<div class="footer" id="footer">
+    <div>脚部份</div>
+</div>
+</body>
+</html>
+
+<script>
+    (function () {
+        var utils = (function () {
+            return {
+                win: function win(attr, value) {
+                    //判断是否传参数的3种方式：
+                    //如果定义了形参，但没有赋值拿到的是基本数据类型中的undefined;
+                    //如果用typeof来判断，得到的undefined一定要加引号；
+                    //arguments.length判断传了几个参数
+                    if (typeof value === 'undefined') {
+                        return document.documentElement[attr] || document.body[attr];
+                    }
+                    document.documentElement[attr] = document.body[attr] = value;
+                },
+                offset: function offset(curEle) {
+                    var par = curEle.offsetParent;
+                    var l = curEle.offsetLeft;
+                    var t = curEle.offsetTop;
+                    while (par) {
+                        if (window.navigator.userAgent.indexOf('MSIE 8') === -1) {
+                            l += par.clientLeft;
+                            t += par.clientTop;
+                        }
+                        l += par.offsetLeft;
+                        t += par.offsetTop;
+                        par = par.offsetParent;
+                    }
+                    return {left: l, top: t}
+                },
+                addClass: function addClass(curEle, strClass) {
+                    var aryClass = strClass.replace(/(^ +)|( +$)/g, "").split(/\s+/g);
+                    for (var i = 0; i < aryClass.length; i++) {
+                        var curClass = aryClass[i];
+                        if (!this.hasClass(curEle, curClass)) {
+                            curEle.className += " " + curClass;
+                        }
+                    }
+                },
+                hasClass: function hasClass(curEle, strClass) {
+                    strClass = strClass.replace(/(^ +)|( +$)/g, "");
+                    var reg = new RegExp("\\b" + strClass + "\\b");
+                    return reg.test(curEle.className);
+                },
+                removeClass:function removeClass(curEle,strclass){
+                var aryClass=strclass.replace(/(^ +)|( +$)/g,"").split(/\s+/g);
+                for(var i=0; i<aryClass.length; i++){
+                    var curClass=aryClass[i];
+                    var reg=new RegExp("\\b"+curClass+"\\b");
+                    if(reg.test(curEle.className)){
+                        curEle.className=curEle.className.replace(reg," ").replace(/\s+/g," ").replace(/(^ +)|( +$)/g,"");
+                    }
+                }
+            }
+            }
+        })();
+
+        window.utils = utils;
+    })();
+
+
+    window.onload = function () {
+        window.onscroll = computedDisplay;
+        function computedDisplay() {
+            var main = document.getElementById('main');
+            var footer = document.getElementById('footer');
+            addAnimate(main, 'mainanimate');
+            addAnimate(footer, 'footeram');
+//            removeAnimate(main, 'mainanimate');
+//            removeAnimate(footer, 'footeram');
+        };
+
+        function addAnimate(curEle, strClass) {
+            var curOffsetTop = utils.offset(curEle).top;//当前元素卷去的高度
+            var curWinTop = utils.win('clientHeight');//当前屏幕的高度
+            var scrollTop = utils.win('scrollTop');//当前屏幕卷去的高度
+            if (curOffsetTop > scrollTop && curOffsetTop < scrollTop + curWinTop) {
+                utils.addClass(curEle, strClass);
+            }
+            if (curOffsetTop  > scrollTop+ curWinTop) {
+                utils.removeClass(curEle, strClass);
+            }
+        }
+//        function removeAnimate(curEle, strClass) {
+//            var curOffsetTop = utils.offset(curEle).top;//当前元素卷去的高度
+//            var curWinTop = utils.win('clientHeight');//当前屏幕的高度
+//            var scrollTop = utils.win('scrollTop');//当前屏幕卷去的高度
+//            if (curOffsetTop  > scrollTop+ curWinTop) {
+//                utils.removeClass(curEle, strClass);
+//            }
+//        }
+    }
+
+</script>
+
+
