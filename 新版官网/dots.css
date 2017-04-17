@@ -1,0 +1,103 @@
+ul, li {
+    list-style-type: none
+}
+
+.about {
+    width: 100%;
+    background: #aaa;
+    padding: 20px 0;
+    overflow: hidden
+}
+
+.about ul {
+    width: 1000px;
+    margin: auto;
+    line-height: 24px;
+    background: #bbb;
+}
+
+#fountainG {
+    position: relative;
+    width: 240px;
+    height: 29px;
+    background: #ccc;
+}
+
+/*这个是每个点的自己的块*/
+#fountainG li {
+    background: #000000;
+    position: absolute;
+    top: 0;
+    width: 5px;
+    height: 5px;
+    animation: bounce_fountainG 1.2s linear infinite;
+    transform: scale(.3);
+    border-radius: 19px;
+}
+
+#fountainG li:first-child {
+    left: 0;
+    -moz-animation-delay: 0.48s;
+    -webkit-animation-delay: 0.48s;
+    -ms-animation-delay: 0.48s;
+    -o-animation-delay: 0.48s;
+    animation-delay: .48s;
+}
+
+#fountainG li:nth-child(2) {
+    left: 10px;
+    -moz-animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+    -ms-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+#fountainG li:nth-child(3) {
+    left: 20px;
+    -moz-animation-delay: 0.72s;
+    -webkit-animation-delay: 0.72s;
+    -ms-animation-delay: 0.72s;
+    -o-animation-delay: 0.72s;
+    animation-delay: 0.72s;
+}
+
+#fountainG li:nth-child(4) {
+    left: 30px;
+    -moz-animation-delay: 0.84s;
+    -webkit-animation-delay: 0.84s;
+    -ms-animation-delay: 0.84s;
+    -o-animation-delay: 0.84s;
+    animation-delay: 0.84s;
+}
+
+#fountainG li:nth-child(5) {
+    left: 40px;
+    -moz-animation-delay: 0.96s;
+    -webkit-animation-delay: 0.96s;
+    -ms-animation-delay: 0.96s;
+    -o-animation-delay: 0.96s;
+    animation-delay: 0.96s;
+}
+
+#fountainG li:nth-child(6) {
+    left: 50px;
+    -moz-animation-delay: 1.08s;
+    -webkit-animation-delay: 1.08s;
+    -ms-animation-delay: 1.08s;
+    -o-animation-delay: 1.08s;
+    animation-delay: 1.08s;
+}
+
+/*这里是定义动画函数，很简单就是从1倍减小到0.3倍。*/
+
+@keyframes bounce_fountainG {
+    0% {
+        transform: scale(.5);
+        background-color: #000000;
+    }
+    100% {
+        transform: scale(.3);
+        background-color: #bbb;
+    }
+}

@@ -1,0 +1,503 @@
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    font-style: normal;
+}
+
+body, html {
+    font-size: 16px;
+    font-family: Microsoft Yahei, Avenir, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+    color: #333;
+}
+
+img {
+    border: none;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/*navbar导航*/
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.navbar {
+    /*position: relative;*/
+    /*min-height: 50px;*/
+    margin-bottom: 0;
+    border: none;
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 2% 0;
+}
+
+.header .logo {
+    float: left;
+    cursor: pointer;
+}
+.header .header-nav {
+    float: right;
+}
+
+.header .header-nav ul li {
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    margin-right: 10px;
+}
+
+.header .header-nav ul li a {
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 47px;
+    color: #666;
+    font-size: 18px;
+}
+
+.header .header-nav ul li.app{
+    width: 112px;
+}
+.header .header-nav ul li.app a{
+    padding: 0;
+}
+.header .header-nav ul li:hover, .header .header-nav ul li.show {
+    border-bottom: 3px solid #333;
+    font-weight: bold;
+    color: #333;
+}
+
+.header .my-language {
+    float: right;
+    margin: 12px 15px 0 0;
+}
+
+.header .my-language select {
+    border: 1px solid #e0e0e0;
+    color: #e0e0e0;
+    height: 22px;
+    width: 62px;
+    font-size: 14px;
+    outline: none;
+}
+
+
+
+/*banner*/
+/*main*/
+.main{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.main .item{
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.scale{
+    width: 100%;
+    transition:all 1s ease-in-out;
+}
+.main .item:hover img{
+    transform: scale(1.2,1.2);
+}
+.main .item img{
+    width: 100%;
+}
+
+.main .txt{
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -50px;
+}
+.main .txt h3{
+    /*font-family: "宋体";*/
+    margin-bottom: 50px;
+}
+.main .txt a{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #000;
+}
+
+
+
+.footer{
+    padding: 100px auto;
+}
+
+.footer{
+    text-align: center;
+    font-family: "宋体";
+}
+.footer-top img{
+    width: 30%;
+}
+.footer-cen{
+    margin: 100px 0 50px 0;
+    font-size: 14px;
+    line-height: 30px;
+}
+.footer-cen .p1{
+    margin-bottom: 20px;
+}
+.footer-icon{
+    margin: 50px 0 50px 0;
+}
+.footer-icon img{
+    width: 10%;
+    margin: 20px;
+}
+.footer-bom{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+.footer .footer_top img{
+    margin: 100px 0 50px 0;
+}
+.footer .footer_top h3{
+    font-family: "宋体";
+    font-size: 18px;
+    text-align: center;
+    /*line-height: ;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*index页面*/
+.index-banner {
+    width: 100%;
+    position: relative;
+}
+
+.index-banner-img{
+    width: 100%;
+}
+
+.index-banner-txt {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 100%;
+}
+
+.index-banner h1 {
+    font-size: 72px;
+    font-weight: bold;
+    color: #fff;
+    -webkit-animation: fadeInDown 1s ease 0s 1 both;
+    -moz-animation: fadeInDown 1s ease 0s 1 both;
+    -ms-animation: fadeInDown 1s ease 0s 1 both;
+    -o-animation: fadeInDown 1s ease 0s 1 both;
+    animation: fadeInDown 1s ease 0s 1 both;
+}
+
+.index-banner h3 {
+    padding-top: 34px;
+    padding-bottom: 40px;
+    font-size: 48px;
+    color: #fff;
+    -webkit-animation: fadeInDown 2s ease 0s 1 both;
+    -moz-animation: fadeInDown 2s ease 0s 1 both;
+    -ms-animation: fadeInDown 2s ease 0s 1 both;
+    -o-animation: fadeInDown 2s ease 0s 1 both;
+    animation: fadeInDown 2s ease 0s 1 both;
+}
+
+.index-banner p {
+    font-size: 18px;
+    color: #0e778e;
+    line-height: 25px;
+    -webkit-animation: fadeInDown 3s ease 0s 1 both;
+    -moz-animation: fadeInDown 3s ease 0s 1 both;
+    -ms-animation: fadeInDown 3s ease 0s 1 both;
+    -o-animation: fadeInDown 3s ease 0s 1 both;
+    animation: fadeInDown 3s ease 0s 1 both;
+}
+
+.index-banner .app-down {
+    margin: 0 auto;
+    padding: 5% 26% 0;
+}
+
+.index-banner .app-down .ios {
+    background: #00b9b2;
+    float: left;
+    -webkit-animation: fadeInRight 2s ease 0s 1 both;
+    -moz-animation: fadeInRight 2s ease 0s 1 both;
+    -ms-animation: fadeInRight 2s ease 0s 1 both;
+    -o-animation: fadeInRight 2s ease 0s 1 both;
+    animation: fadeInRight 2s ease 1s 1 both;
+}
+
+.index-banner .app-down .android {
+    background: #fabe00;
+    float: right;
+    -webkit-animation: fadeInLeft 2s ease 0s 1 both;
+    -moz-animation: fadeInLeft 2s ease 0s 1 both;
+    -ms-animation: fadeInLeft 2s ease 0s 1 both;
+    -o-animation: fadeInLeft 2s ease 0s 1 both;
+    animation: fadeInLeft 2s ease 1s 1 both;
+}
+
+.index-banner .app-down .ios:hover, .index-banner .app-down .android:hover {
+    background: #fff;
+}
+
+.index-banner .app-down .ios:hover a {
+    color: #00b9b2;
+}
+
+.index-banner .app-down .android:hover a {
+    color: #fabe00;
+}
+
+
+
+/*.main{*/
+    /*width: 100%;*/
+    /*height: 200px;*/
+    /*background: red;*/
+/*}*/
+
+/*.main-item{*/
+    /*border: 1px solid #000;*/
+/*}*/
+
+
+
+/*.main {*/
+    /*padding-bottom: 45px;*/
+/*}*/
+
+/*.main .main-item {*/
+    /*width: 100%;*/
+    /*padding: 45px 0;*/
+/*}*/
+
+/*.main .main-item .main-item-txt {*/
+    /*float: left;*/
+/*}*/
+
+/*.main .main-item .main-item-txt h2 {*/
+    /*font-size: 34px;*/
+    /*color: #fabe00;*/
+    /*border-bottom: 3px solid #fabe00;*/
+    /*display: inline-block;*/
+/*}*/
+
+/*.main .main-item .main-item-txt span {*/
+    /*font-size: 62px;*/
+    /*color: #fabe00;*/
+    /*font-weight: bold;*/
+    /*padding-left: 5px;*/
+/*}*/
+
+/*.main .main-item .main-item-txt h3 {*/
+    /*font-size: 38px;*/
+    /*font-weight: 600;*/
+    /*padding-top: 70px;*/
+/*}*/
+
+/*.main .main-item .main-item-txt h4 {*/
+    /*font-size: 26px;*/
+    /*padding-top: 30px;*/
+    /*padding-bottom: 28px;*/
+/*}*/
+
+/*.main .main-item .main-item-txt p {*/
+    /*font-size: 16px;*/
+    /*line-height: 28px;*/
+    /*color: #3f3f3f;*/
+/*}*/
+
+
+
+
+
+/*!*footer脚本*!*/
+/*.footer p {*/
+    /*line-height: 50px;*/
+    /*text-align: center;*/
+    /*background: #f8f8f8;*/
+    /*color: #666;*/
+/*}*/
+
+
+/*about-us*/
+.about-us-banner {
+    position: relative;
+}
+
+.about-us-main {
+    padding: 0 45px;
+}
+
+.about-us-main h2 {
+    width: 506px;
+    height: 101px;
+    background: url("../images/Enjoy-lg.png") no-repeat left top;
+    margin: 60px 0 30px 0;
+}
+
+.about-us-main p {
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.about-us-main .about-us-main-img {
+    width: 100%;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+
+/*app*/
+.app-banner {
+    width: 100%;
+    position: relative;
+}
+.app-banner-img{
+    width: 70%;
+    margin: 3% auto;
+}
+.app-banner .app{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+}
+.app-banner .app p{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.app-banner .app img{
+    width: 75%;
+    animation: fadeInDown 2s ease 0s 1 both;
+}
+.app-main {
+    padding-bottom: 60px;
+}
+.app-main h3 {
+    font-weight: bold;
+    padding-top: 60px;
+}
+.app-main h5 {
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 45px;
+}
+.app-main p {
+    color: #666;
+    font-size: 14px;
+    line-height: 25px;
+    padding-top: 20px;
+}
+
+/*join-us*/
+.join-us-main h1 {
+    font-size: 36px;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    color: #0f2829;
+    font-weight: 900;
+}
+
+.join-us-main p {
+    line-height: 40px;
+    padding-bottom: 140px;
+    font-size: 16px;
+    color: #0f2829;
+}
+
+.join-us-main dl {
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.join-us-main dd {
+    margin-top: 15px;
+}
+
+.join-us-main .join-us-main-btn {
+    font-size: 18px;
+    line-height: 38px;
+    width: 180px;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+    border-radius: 20px;
+    margin: 88px auto 100px;
+    color: #666;
+    cursor: pointer;
+}
+
+.join-us-main .join-us-main-btn:hover {
+    border: 1px solid #0D4C8A;
+    color: #0D4C8A;
+    font-weight: bold;
+}
+
+.join-us-main .join-us-main-share {
+    width: 180px;
+    margin: 0 auto;
+    padding-bottom: 95px;
+}
+
+
+
+
+
+
+

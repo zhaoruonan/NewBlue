@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+body,span,div,ul,li,ol,dl,dt,dd,a,img,input,textarea,h1,h2,h3,h4,h5,h6,p,form,em,b,u,i{ padding:0px; margin:0px; border:0px; list-style:none;}
+table{ border-collapse:collapse;} /*单元格间隙合并*/
+th,td{ padding:0;}/*重置单元格默认填充*/
+input,textarea,button{ outline:none; font-family:'微软雅黑'; font-size:14px;}
+body{ font:14px/1.125 '微软雅黑'; overflow-x:hidden;}
+i,em{ font-style:normal;}
+a{ bblr:expression(this.onFocus=this.blur());/*IE使用*/outline-style:none;/*FF使用*/} /*去除a标签带来的虚框*/
+a:visited,a:link{ text-decoration:none; color:#929292;}
+a:hover{ color:#7e308e; text-decoration:none;}
+a:active{}
+
+.fl{ float:left;}
+.fr{ float:right;}
+/*清浮动*/
+.clearfix:after{ content:""; display:block; clear:both;}
+.clearfix{ zoom:1;}
+
+/*nav*/
+.nav_wrap{ position:fixed; top:0px; left:0px; z-index:100; width:100%; height:120px; background:#fff; border-bottom:1px solid #e0e0e0;}
+.headerLogo{ position:absolute; top:38px; left:60px; width:133px;}
+.nav{ position:absolute; top:0px; right:0px; display:block; width:63%;}
+.nav li{ position:relative; float:left; width:11%; font-size:16px; line-height:120px; text-align:center;}
+.nav li a.title{ width:100%; height:100%; display:block;}
+.nav li a.hover,.nav li.active a.title{ color:#81418a;}
+.nav li ul{ display:none; position:absolute; top:120px; left:0px; z-index:99; width:100%;}
+.nav li li{ width:100%; height:39px; line-height:39px; border-bottom:1px solid #c6c5c4; font-size:14px; background:url(../images/navChildBg.png);}
+.nav li.select_btn{ cursor:pointer;}
+.nav_select{ display:none; position:absolute; top:120px; right:0px; z-index:100; padding:25px; border:1px solid #dcdadb; border-top:0px; border-right:0px; background:#f2efef;}
+.nav_select .txt{ float:left; width:260px; height:20px; line-height:20px; padding:5px 0px 5px 6px; background:#fff;}
+.nav_select a{ float:left; width:30px; height:30px; background:#474747 url(../images/footSearch.png) no-repeat center center; transition:all 0.3s;}
+.nav_select a:hover{ background-color:#000;}
+.nav li li a{ width:100%; height:100%; display:block;}
+.nav li li a:hover{ background:#81418a; color:#fff;}
+.navScrollTop{ position:absolute; top:0px; left:0px; width:99px; height:4px; background:#81418a;}
+.wapNavBtn,.nav_language{ display:none;}
+.wapNav{ display:none;}

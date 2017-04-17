@@ -13,7 +13,7 @@ body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";background:#ddd;}
 .roundabout-moveable-item{width:646px;height:416px;cursor:pointer;}
 /*border:3px solid #ccc;border:3px solid rgba(0, 0, 0, 0.08);border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;*/
 .roundabout-moveable-item img{width:100%;}
-/*.roundabout-in-focus{border:3px solid rgba(0, 0, 0, 0.2);}*/
+.roundabout-in-focus{border:3px solid rgba(0, 0, 0, 0.2);}
 </style> 
 
 </head> 
@@ -33,8 +33,8 @@ body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";background:#ddd;}
 <script type="text/javascript"> 
 $(document).ready(function() {
 	$('#myroundabout').roundabout({
-//		autoplay: true,//自动播放
-//		autoplayDuration: 5000,//时间
+		autoplay: true,//自动播放
+		autoplayDuration: 5000,//时间
 		autoplayPauseOnHover: true,//自动鼠标移上停滞
 		shape: 'figure8',  //支持属性theJuggler、figure8、waterWheel、square、conveyorBeltLeft、conveyorBeltRight、goodbyeCruelWorld、diagonalRingLeft、diagonalRingRight、rollerCoaster、tearDrop、tickingClock、flurry、nowSlide、risingEssence随便换
 		minOpacity: 1
